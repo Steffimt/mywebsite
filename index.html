@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Steffi | Front-end developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <nav>
+        <h3 class="logo">Steffi.dev</h3>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="content">
+                <div class="hero-main">
+                    <div class="hero-text">
+                        <h1>Front-End Developer</h1>
+                        <p>Hi, i'm Steffi Maria Tanasia. A passionate front end developer based in Jakarta, Indonesia.</p>
+                        <button class="resume">My Resume</button>
+                    </div>
+                    <div class="circle-container">
+                        <div class="hero-img"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="skills">
+                        <p>Tech Stack</p>
+                        <div class="logos">
+                            <li>
+                                <img src="/img/html.png" title="HTML 5">
+                            </li>
+                            <li>
+                                <img src="/img/css.png" title="CSS">
+                            </li>
+                            <li>
+                                <img src="img/js.png" title="Javascript">
+                            </li>
+                            <li>
+                                <img src="img/tailwind.svg" title="Tailwind CSS"> 
+                            </li>
+                            <li>
+                                <img src="/img/react.svg" title="React">
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="image-side">
+                    <img src="/img/profile2.svg">
+                </div>
+                <div class="text-side">
+                    <h3>ABOUT ME</h3>
+                    <P>As a front end developer, i have a set of skills in HTML, CSS, JavaScript, Tailwind CSS and React. My expertise lies in creating and translating designs into a responsive and fully functional website that offers smooth user experience. I am a team player who loves to collaborate in teams to share ideas and produce a quality website.
+                        <br><br>
+                        In my free time, i like to read light novels and listen to music.</P>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="project">
+        <div class="container">
+            <div class="project-content">
+                <h1>Portfolio</h1>
+                <div class="items button-filters ">
+                    <button class="item active" data-name="all">All</button>
+                    <button class="item inactive" data-name="html/css/js">HTML/CSS/JS</button>
+                    <button class="item inactive" data-name="tailwind css">Tailwind CSS</button>
+                    <button class="item inactive" data-name="react">React</button>
+                </div>
+                <div class="gallery">
+                    <div class="images" data-name="html/css/js"><span><img src="/img/svt.jpg"></span></div>
+                    <div class="images" data-name="tailwind css"><span><img src="/img/svt2.png"></span></div>
+                    <div class="images" data-name="react"><span><img src="/img/svt3.png"></span></div>
+                    <div class="images" data-name="tailwind css"><span><img src="/img/svt2.png"></span></div>
+                    <div class="images" data-name="html/css/js"><span><img src="/img/svt.jpg"></span></div>
+                    <div class="images" data-name="react"><span><img src="/img/svt3.png"></span></div>
+                    <div class="images" data-name="react"><span><img src="/img/svt3.png"></span></div>
+                    <div class="images" data-name="tailwind css"><span><img src="/img/svt2.png"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h1>Contact</h1>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
