@@ -470,6 +470,9 @@ form button{
     cursor: pointer;
     box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.20);
 }
+form button:hover{
+    background: #607eb6;
+}
 form button:active{
     transform: translateY(3px);
     box-shadow: none;
