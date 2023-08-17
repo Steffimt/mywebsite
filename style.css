@@ -6,6 +6,9 @@
 body{
     overflow-y: scroll;
 }
+html{
+    scroll-behavior: smooth;
+}
 nav{
     padding: 25px 50px;
     display: flex;
@@ -36,7 +39,11 @@ nav ul{
 nav ul li{
     cursor: pointer;
 }
-nav ul li:hover{
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
     color: #6F91D1;
 }
 .hero{
@@ -202,7 +209,7 @@ p{
     text-align: justify;
 }
 .project{
-    padding: 7rem 0;
+    padding-top: 5rem;
 }
 .project-content{
     display: flex;
@@ -248,8 +255,9 @@ button.inactive:hover{
 
 .gallery .images{
     padding: 10px;
+    /* margin: 10px; */
     width: calc(100%/3);
-    /* position: relative; */
+    position: relative;
 }
 
 
@@ -285,32 +293,134 @@ button.inactive:hover{
     }
 }
 
-.overlay{
+/* Existing styles for .gallery and .images */
+
+.overlay {
     position: absolute;
-    top: 0;
     bottom: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
     right: 0;
+    height: 94%;
+    width: 94%;
+    /* top: 0;
+    left: 0;
     height: 100%;
-    width: 100%;
+    width: 100%; */
     opacity: 0;
     transition: .5s ease;
-    background-color: #F7AAAA;
+    background: linear-gradient(to bottom right, rgba(227, 13, 13, 1), lightsalmon);
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 25px;
+    /* margin: auto 0; */
 }
 
-.images:hover .overlay{
+.images:hover .overlay {
     opacity: 1;
 }
 
-.category{
-    color: white;
-    text-align: center;
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    top: 10px;
+    left: 10px;
+    right: 0;
+    height: 94%;
+    width: 94%;
+    /* top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; */
+    opacity: 0;
+    transition: .5s ease;
+    background: linear-gradient(to bottom right, rgba(56, 189, 248, 1), lightblue);
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 25px;
+    /* margin: auto 0; */
 }
 
+.images:hover .overlay2 {
+    opacity: 1;
+}
+
+.overlay3 {
+    position: absolute;
+    bottom: 0;
+    top: 10px;
+    left: 10px;
+    right: 0;
+    height: 94%;
+    width: 94%;
+    /* top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; */
+    opacity: 0;
+    transition: .5s ease;
+    background: linear-gradient(to bottom right, plum, rgba(97, 218, 251, 1));
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 25px;
+    /* margin: auto 0; */
+}
+
+.images:hover .overlay3 {
+    opacity: 1;
+}
+
+
+.icon-box{
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3rem);
+    align-items: center;
+}
+.icon-box a{
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: #222222;
+}
+.icon-box a:hover{
+    background: #fff;
+}
+.category {
+    /* align-items: center; */
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(10.5rem);
+}
+.title{
+    font-family: 'Poppins', 'sans-serif';
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    transform: translateY(11rem);
+    margin: 0 10px;
+    padding: 0 15px;
+    font-size: 1rem;
+}
+.contact{
+    padding-top: 5rem;
+}
 .contact-content h1{
     font-size: 50px;
     margin-bottom: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', 'sans-serif';
     text-align: left;
     font-weight: 600;
 }
@@ -363,6 +473,6 @@ form button:active{
 footer {
     background-color: #222222;
     margin-top: 5rem;
-    padding: 10rem 0;
+    padding: 9.8rem 0;
     width: 100%;
 }
