@@ -424,11 +424,15 @@ button.inactive:hover{
     text-align: left;
     font-weight: 600;
 }
+.row{
+    display: flex;
+    justify-content: space-between;
+}
 form{
     background: #fff;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     /* max-width: 455px; */
     /* margin-right: 13rem; */
     border-radius: 4px;
@@ -470,6 +474,56 @@ form button:active{
     transform: translateY(3px);
     box-shadow: none;
 }
+.right-side{
+    padding-left: 4rem;
+}
+.cloud {
+    position: inherit;
+    top: 50px;
+    width: 320px;
+    height: 100px;
+    background: #222222;
+    border-radius: 100px;
+    z-index: 100;
+    filter: drop-shadow(0 0 15px #222222);
+}
+.cloud::before{
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 40px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #222222;
+  box-shadow: 90px 0 0 30px #222222;
+}
+.text{
+    position: absolute;
+    top: 40px;
+    height: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000;
+    text-shadow: 0 0 5px #000;
+    /* 0 0 15px #000; */
+    /* 0 0 30px #000; */
+    transform-origin: bottom;
+    animation: animate 2s linear forwards;
+  }
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) scale(1);
+    }
+    70%{
+        transform: translateY(290px) scale(1);
+    }
+    100%{
+        transform: translateY(290px) scale(0);
+    }
+}
+
 footer {
     background-color: #222222;
     margin-top: 5rem;
