@@ -8,8 +8,9 @@
     <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     <nav>
@@ -84,7 +85,7 @@
                     <button class="item inactive" data-name="react">React</button>
                 </div>
                 <div class="gallery">
-                    <div class="images" data-name="html/css/js"><span><img src="/img/svt.jpg"></span></div>
+                    <div class="images" data-name="html/css/js"><span><img src="/img/svt.jpg"><div class="overlay"><h3 class="category">HTML/CSS/JS</h3></div></span></div>
                     <div class="images" data-name="tailwind css"><span><img src="/img/svt2.png"></span></div>
                     <div class="images" data-name="react"><span><img src="/img/svt3.png"></span></div>
                     <div class="images" data-name="tailwind css"><span><img src="/img/svt2.png"></span></div>
@@ -100,8 +101,26 @@
         <div class="container">
             <div class="contact-content">
                 <h1>Contact</h1>
+                <div class="row">
+                    <div class="left-side">
+                        <form action="https://formsubmit.co/steffimariatanasia@gmail.com" method="POST">
+                            <input type="hidden" name="_captcha" value="false">
+                            <div class="flex-box">
+                                <input type="hidden" name="_subject" value="New email!">
+                                <input type="text" id="name" name="name" placeholder="Full Name*" required>
+                                <input type="email" id="email" name="email" placeholder="Email*" required>
+                            </div>
+                            <textarea id="message" rows="8" columns="7" name="message" placeholder="Message*"></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="right-side"></div>
+                </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container"></div>
+    </footer>
 </body>
 </html>

@@ -31,3 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+function sendEmail(){
+    Email.send({
+        SecureToken: "57cdeb3e-ff4a-4d3e-aed9-2e5816667034",
+        To : 'steffimariatanasia@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New contact form inquiry",
+        Body : "Name: " + document.getElementById("name").value + "<br> Email: </br>" + document.getElementById("email").value + "<br> Message: " + document.getElementById("message").value
+    }).then(
+      message => alert("Message Successfully Sent!")
+    );
+}
