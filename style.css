@@ -9,10 +9,18 @@ body{
 html{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+::-webkit-scrollbar-thumb {
+    background-color: #6F91D1; /* Color of the thumb */
+    border-radius: 6px; /* Rounded corners of the thumb */
+}
 nav{
     padding: 25px 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #fff;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.10);
     position: fixed;
@@ -46,6 +54,37 @@ nav ul li a{
 nav ul li a:hover{
     color: #6F91D1;
 }
+nav .menu{
+    display: none;
+    position: absolute;
+}
+i.mobile-menu{
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.mobile-nav{
+    display: none;
+    left: 0;
+}
+.mobile-nav-toggle-container {
+    display: none;
+}
+.mobile-nav.closed-menu{
+    display: none;
+    left: -100%!important;
+}
+.mobile-nav.opened-menu {
+    /* left: 0!important; */
+    transform: translateX(0);
+}
+
+
+.mobile-nav ul a{
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+}
 .hero{
     display: flex;
     flex-direction: column;
@@ -68,7 +107,7 @@ nav ul li a:hover{
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    gap: 80px;
+    gap: 75px;
     position: relative;
 }
 .hero-text{
@@ -76,7 +115,7 @@ nav ul li a:hover{
     position: relative;
 }
 .hero-text h1{
-    font-size: 50px;
+    font-size: 53px;
     font-family: 'Poppins', sans-serif;
 }
 p{
@@ -91,6 +130,7 @@ p{
     box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.20);
     font-family: 'Poppins', sans-serif;
     background-color: #BEE1E5;
+    font-weight: 600;
     border: none;
     cursor: pointer;
 }
@@ -180,6 +220,12 @@ p{
     background-color: #222222;
     padding: 125px 0;
 }
+#particles-js{
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    /* position: absolute; */
+}
 .about-content{
     display: flex;
     gap: 9rem;
@@ -192,9 +238,9 @@ p{
     width: 360px;
     background-size: cover;
 }
-.text-side{
-    /* padding-right: 1.5rem; */
-}
+/* .text-side{
+    padding-right: 1.5rem;
+} */
 .text-side h3{
     color: #6F91D1;
     font-size: 30px;
@@ -530,6 +576,230 @@ form button:active{
 footer {
     background-color: #222222;
     margin-top: 5rem;
-    padding: 9.8rem 0;
+    padding: 5rem 0;
     width: 100%;
+}
+.icons {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.resize{
+    margin: 1rem 1rem;
+    font-size: 30px;
+}
+.copyright{
+    text-align: center;
+    color: white;
+    font-family: 'Mulish', 'sans-serif';
+}
+
+
+@media (max-width: 320px) {
+    nav {
+        padding: 25px 30px;
+        display: flex;
+        justify-content: space-between; /* Add this line */
+        align-items: center;
+    }
+    nav ul{
+        display: none;
+    }
+    nav .menu {
+        display: block;
+        font-size: 1.5rem;
+    }
+    .mobile-nav-toggle-container {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 50px; /* Adjusted the right value */
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        height: 100vh;
+        width: 100%; /* Adjusted the width */
+        position: fixed;
+        top: 0;
+        left: -100%; /* Adjusted the initial right value */
+        transition: transform 0.3s ease-in-out;
+        z-index: 300;
+    }
+
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8rem;
+        gap: 2rem;
+        list-style: none;
+        width: 100%; 
+        text-align: center;
+    }
+
+    .mobile-nav ul a {
+        text-align: center;
+        font-family: 'poppins', 'sans-serif';
+        font-weight: 400;
+    }
+    .mobile-nav.opened-menu {
+        left: 0;
+        justify-content: center;
+    }    
+    .mobile-nav span {
+        cursor: pointer;
+        font-size: 2rem;
+        position: absolute;
+        right: 28px;
+        top: 1.5rem;
+    }
+    .circle-container{
+        position: absolute;
+        margin: auto 10%;
+    }
+    .hero{
+        flex-direction: inherit;
+        height: 195vh
+    }
+    .hero-img{
+        height: 200px;
+        width: 200px;
+    }
+    .circle{
+        height: 200px;
+        width: 200px;
+    }
+    .hero-main{
+        display: block;
+        margin: 0 1rem;
+    }
+    .hero-text{
+        padding: 0 1rem;
+        transform: translateY(16rem);
+        text-align: center;
+    }
+    .hero-text h1{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+    p{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .container{
+        margin: 0 1rem;
+        padding: 0 0;
+    }
+    .content{
+        height: 40rem;
+    }
+    .skills{
+        display: block;
+        transform: translateY(33rem);
+    }
+    .skills p{
+        text-align: center;
+        border-bottom: 2px solid black;
+        padding-bottom: 2rem;
+        margin-top: 2rem;
+        border-right: none;
+        margin-right: auto;
+        padding-right: 0;
+        padding-bottom: 1rem;
+        /* width: fit-content; */
+    }
+    .skills img{
+        height: 25px;
+        width: 25px;
+    }
+    .logos{
+        margin: 2rem 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logos li{
+        height: 50px;
+        width: 50px;
+    }
+    .about{
+        margin-top: 25px;
+        padding: 100px 0;
+    }
+    .about-content{
+        display: block;
+    }
+    .image-side{
+        display: flex;
+        justify-content: center;
+    }
+    .image-side img{
+        width: 250px;
+        height: 250px;
+    }
+    .text-side{
+        padding: 0 1rem;
+    }
+    .text-side h3{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .text-side p{
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+    .project {
+        padding-top: 5rem;
+    }
+    .project-content h1{
+        font-size: 40px;
+    }
+    .button-filters{
+        margin-bottom: 50px;
+    }
+    .overlay{
+        height: 93%;
+        width: 93%;
+    }
+    .overlay2{
+        height: 93%;
+        width: 93%;
+    }
+    .overlay3{
+        height: 93%;
+        width: 93%;
+    }
+    .contact{
+        padding-top: 5rem;
+    }
+    .contact-content{
+        padding: 0 20px;
+    }
+    .contact-content h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    .flex-box{
+        gap: 0;
+    }
+    .right-side{
+        display: none;
+    }
+    form input, form textarea{
+        font-size: 14px;
+    }
+    form button{
+        font-size: 0.8rem;
+        align-self: center;
+        width: 100%;
+    }
+    footer{
+        padding: 3rem 0;
+    }
 }

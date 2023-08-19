@@ -1,3 +1,27 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileNav = document.querySelector('.mobile-nav');
+    const menuIcon = document.querySelector('.menu');
+    const closeIcon = document.querySelector('.fa-xmark');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav ul li a');
+
+    menuIcon.addEventListener('click', () => {
+        mobileNav.classList.remove('closed-menu');
+        mobileNav.classList.add('opened-menu');
+    });
+
+    closeIcon.addEventListener('click', () => {
+        mobileNav.classList.remove('opened-menu');
+        mobileNav.classList.add('closed-menu');
+    });
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileNav.classList.remove('opened-menu');
+        });
+    });
+});
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const filterItem = document.querySelector(".items");
     const filterImg = document.querySelectorAll(".images");
