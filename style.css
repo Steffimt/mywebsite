@@ -117,9 +117,11 @@ i.mobile-menu{
 .hero-text h1{
     font-size: 53px;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 0.5rem;
 }
 p{
     font-size: 26px;
+    margin-bottom: 0.5rem;
     font-family: 'Mulish', sans-serif;
 }
 .resume{
@@ -775,16 +777,23 @@ footer {
         margin-bottom: 50px;
     }
     .overlay{
-        height: 93%;
-        width: 93%;
+        height: 91%;
+        width: 91%;
     }
     .overlay2{
-        height: 93%;
-        width: 93%;
+        height: 91%;
+        width: 91%;
     }
     .overlay3{
-        height: 93%;
-        width: 93%;
+        height: 91%;
+        width: 91%;
+    }
+    .category{
+        transform: translateY(6.5rem);
+        font-size: 1.2rem;
+    }
+    .title{
+        transform: translateY(7rem);
     }
     .contact{
         padding-top: 5rem;
@@ -995,6 +1004,13 @@ footer {
     .overlay3{
         height: 94%;
         width: 94%;
+    }
+    .category{
+        transform: translateY(7.5rem);
+        font-size: 1.2rem;
+    }
+    .title{
+        transform: translateY(8rem);
     }
     .contact{
         padding-top: 5rem;
@@ -1209,10 +1225,10 @@ footer {
         width: 95%;
     }
     .category{
-        transform: translateY(13.5rem);
+        transform: translateY(10.5rem);
     }
     .title{
-        transform: translateY(14rem);
+        transform: translateY(11rem);
     }
     .contact{
         padding-top: 5rem;
@@ -1242,7 +1258,7 @@ footer {
         padding: 3rem 0;
     }
 }
-@media (min-width: 425px) and (max-width: 650px){
+@media (min-width: 425px) and (max-width: 600px){
     nav {
         padding: 25px 30px;
         display: flex;
@@ -1416,16 +1432,16 @@ footer {
         padding: 0 2rem;
     }
     .overlay{
-        height: 95%;
-        width: 95%;
+        height: 96%;
+        width: 96%;
     }
     .overlay2{
-        height: 95%;
-        width: 95%;
+        height: 94%;
+        width: 93.5%;
     }
     .overlay3{
-        height: 95%;
-        width: 95%;
+        height: 94%;
+        width: 93.5%;
     }
     .category{
         transform: translateY(12.5rem);
@@ -1470,7 +1486,11 @@ footer {
     .flex-box{
         gap: 1rem;
     }
-}@media (min-width: 650px) and (max-width: 768px){
+}
+@media (min-width: 601px) and (max-width: 768px){
+    .hero{
+        height: 130vh;
+    }
     .hero-img{
         height: 250px;
         width: 250px;
@@ -1510,8 +1530,62 @@ footer {
     .right-side{
         display: none;
     }
+    .overlay{
+        height: 92.8%;
+        width: 93%;
+    }
+    .overlay2{
+        height: 92.8%;
+        width: 93%;
+    }
+    .overlay3{
+        height: 92.8%;
+        width: 93%;
+    }
+    .category{
+        transform: translateY(8.5rem);
+    }
+    .title{
+        transform: translateY(9rem);
+    }
 }
-@media (min-width: 769px) and (max-width: 900px){
+@media(min-width: 425px) and (max-width: 550px){
+    .circle-container{
+        margin: auto 20%;
+    }
+    .overlay{
+        height: 94.5%;
+        width: 94.5%;
+    }
+    .overlay2{
+        height: 94.5%;
+        width: 94.5%;
+    }
+    .overlay3{
+        height: 94.5%;
+        width: 94.5%;
+    }
+}
+@media(min-width: 550px) and (max-width: 600px){
+    .circle-container{
+        margin: auto 26%;
+    }
+}
+@media(min-width: 700px) and (max-width: 768px){
+    .overlay{
+        height: 93.8%;
+        width: 93.8%;
+    }
+    .overlay2{
+        height: 93.8%;
+        width: 93.8%;
+    }
+    .overlay3{
+        height: 93.8%;
+        width: 93.8%;
+    }
+}
+@media (min-width: 769px) and (max-width: 950px){
     .container{
         margin: 0 0;
     }
@@ -1535,5 +1609,51 @@ footer {
     }
     .about-content{
         gap: 4rem;
+    }
+    .overlay{
+        height: 94.5%;
+        width: 94.5%;    
+    }
+    .overlay2{
+        height: 94.5%;
+        width: 94.5%;    
+    }
+    .overlay3{
+        height: 94.5%;
+        width: 94.5%;    
+    }
+}
+@media(min-width: 900px) and (max-width: 1000px){
+    .overlay{
+        height: 95%;
+        width: 95%;
+    }
+    .overlay2{
+        height: 95%;
+        width: 95%;
+    }
+    .overlay3{
+        height: 95%;
+        width: 95%;
+    }
+}
+@media(min-width: 1000px) and (max-width: 1100px){
+    .overlay{
+        height: 92.5%;
+        width: 92.5%;
+    }
+    .overlay2{
+        height: 92.5%;
+        width: 92.5%;
+    }
+    .overlay3{
+        height: 92.5%;
+        width: 92.5%;
+    }
+    .category{
+        transform: translateY(9rem);
+    }
+    .title{
+        transform: translateY(10rem);
     }
 }
