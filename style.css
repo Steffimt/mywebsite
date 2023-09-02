@@ -160,7 +160,7 @@ p{
     /* animation: morph 8s ease-in-out infinite; */
 }
 .hero-img{
-    background-image: url(/img/profile.jpg);
+    background-image: url(img/profile.jpg);
     background-size: cover;
     height: 320px;
     position: relative;
@@ -359,8 +359,8 @@ button.inactive:hover{
     top: 10px;
     left: 10px;
     right: 0;
-    height: 93.5%;
-    width: 93.5%;
+    height: 93.8%;
+    width: 93.8%;
     /* top: 0;
     left: 0;
     height: 100%;
@@ -384,8 +384,8 @@ button.inactive:hover{
     top: 10px;
     left: 10px;
     right: 0;
-    height: 93.5%;
-    width: 93.5%;
+    height: 93.8%;
+    width: 93.8%;
     /* top: 0;
     left: 0;
     height: 100%;
@@ -409,8 +409,8 @@ button.inactive:hover{
     top: 10px;
     left: 10px;
     right: 0;
-    height: 93.5%;
-    width: 93.5%;
+    height: 93.8%;
+    width: 93.8%;
     /* top: 0;
     left: 0;
     height: 100%;
