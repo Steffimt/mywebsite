@@ -136,6 +136,10 @@ p{
     border: none;
     cursor: pointer;
 }
+.resume a{
+    text-decoration: none;
+    color: black;
+}
 .resume:hover{
     background-color: #6F91D1;
 }
@@ -355,8 +359,8 @@ button.inactive:hover{
     top: 10px;
     left: 10px;
     right: 0;
-    height: 93.8%;
-    width: 94%;
+    height: 93%;
+    width: 93%;
     /* top: 0;
     left: 0;
     height: 100%;
@@ -380,8 +384,8 @@ button.inactive:hover{
     top: 10px;
     left: 10px;
     right: 0;
-    height: 94%;
-    width: 93.8%;
+    height: 93%;
+    width: 93%;
     /* top: 0;
     left: 0;
     height: 100%;
@@ -405,8 +409,8 @@ button.inactive:hover{
     top: 10px;
     left: 10px;
     right: 0;
-    height: 94%;
-    width: 94%;
+    height: 93%;
+    width: 93%;
     /* top: 0;
     left: 0;
     height: 100%;
@@ -665,6 +669,8 @@ footer {
     }
     .mobile-nav.closed-menu{
         transform: translateX(-100%);
+        justify-content: center;
+        left: 0%!important;
     }
     .mobile-nav span {
         cursor: pointer;
@@ -882,6 +888,8 @@ footer {
     }
     .mobile-nav.closed-menu{
         transform: translateX(-100%);
+        justify-content: center;
+        left: 0%!important;
     }
     .mobile-nav span {
         cursor: pointer;
@@ -1099,6 +1107,8 @@ footer {
     }
     .mobile-nav.closed-menu{
         transform: translateX(-100%);
+        justify-content: center;
+        left: 0%!important;
     }
     .mobile-nav span {
         cursor: pointer;
@@ -1317,6 +1327,8 @@ footer {
     }
     .mobile-nav.closed-menu{
         transform: translateX(-100%);
+        justify-content: center;
+        left: 0%!important;
     }
     .mobile-nav span {
         cursor: pointer;
@@ -1488,6 +1500,74 @@ footer {
     }
 }
 @media (min-width: 601px) and (max-width: 768px){
+    nav {
+        padding: 25px 30px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+    nav ul{
+        display: none;
+    }
+    nav .menu {
+        display: block;
+        font-size: 1.5rem;
+    }
+    .mobile-nav-toggle-container {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 50px; 
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        height: 100vh;
+        width: 100%; 
+        position: fixed;
+        top: 0;
+        left: -100%; 
+        transition: transform 0.3s ease-in-out;
+        z-index: 300;
+    }
+
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8rem;
+        gap: 2rem;
+        list-style: none;
+        width: 100%; 
+        text-align: center;
+    }
+
+    .mobile-nav ul a {
+        text-align: center;
+        font-family: 'poppins', 'sans-serif';
+        font-weight: 400;
+    }
+    .mobile-nav.opened-menu {
+        left: 0!important;
+        justify-content: center;
+        transform: translateX(0);
+    }
+    .mobile-nav.closed-menu{
+        transform: translateX(-100%);
+        justify-content: center;
+        left: 0%!important;
+    }
+    .mobile-nav span {
+        cursor: pointer;
+        font-size: 2rem;
+        position: absolute;
+        right: 28px;
+        top: 1.5rem;
+    }
     .hero{
         height: 130vh;
     }
@@ -1609,6 +1689,7 @@ footer {
     }
     .about-content{
         gap: 4rem;
+        align-items: center;
     }
     .overlay{
         height: 94.5%;
@@ -1621,6 +1702,19 @@ footer {
     .overlay3{
         height: 94.5%;
         width: 94.5%;    
+    }
+}
+@media(min-width: 950px) and (max-width: 1150px){
+    .about-content{
+        gap: 4rem;
+        align-items: center;
+    }
+    .text-side p{
+        font-size: 18px;
+    }
+    .image-side img{
+        width: 250px;
+        height: 250px;
     }
 }
 @media(min-width: 900px) and (max-width: 1000px){
@@ -1651,9 +1745,9 @@ footer {
         width: 92.5%;
     }
     .category{
-        transform: translateY(9rem);
+        transform: translateY(8rem);
     }
     .title{
-        transform: translateY(10rem);
+        transform: translateY(8.5rem);
     }
 }
