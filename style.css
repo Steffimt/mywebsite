@@ -1123,7 +1123,7 @@ footer {
     }
     .hero{
         flex-direction: inherit;
-        height: 195vh
+        height: 188vh
     }
     .hero-img{
         height: 250px;
@@ -1158,7 +1158,7 @@ footer {
     }
     .skills{
         display: block;
-        transform: translateY(33rem);
+        transform: translateY(31rem);
         padding: 0 2rem;
     }
     .skills p{
@@ -1359,7 +1359,7 @@ footer {
     }
     .hero-text{
         padding: 0 1rem;
-        transform: translateY(16rem);
+        transform: translateY(18rem);
         text-align: center;
     }
     .hero-text h1{
@@ -1378,7 +1378,7 @@ footer {
     }
     .skills{
         display: block;
-        transform: translateY(30rem);
+        transform: translateY(34rem);
         padding: 0 2rem;
         width: 100%;
     }
