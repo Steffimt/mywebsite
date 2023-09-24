@@ -129,7 +129,15 @@
                         </form>
                         <script>
                           function myFunction() {
-                            alert("Thankyou, your message has been sent!");
+                            var nameInput = document.getElementById("name");
+                            var emailInput = document.getElementById("email");
+
+                            if (nameInput.value.trim() === "" || emailInput.value.trim() === "") {
+                              alert("Please fill in all the required fields.");
+                            }
+                            else{
+                              alert("Thankyou, your message has been sent!");
+                            }
                           }
                         </script>
                     </div>
