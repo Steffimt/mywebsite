@@ -125,8 +125,13 @@
                                 <input type="email" id="email" name="email" placeholder="Email*" required>
                             </div>
                             <textarea id="message" rows="8" columns="7" name="message" placeholder="Message*"></textarea>
-                            <button type="submit">Send Message</button>
+                            <button onClick="myFunction()" type="submit">Send Message</button>
                         </form>
+                        <script>
+                          function myFunction() {
+                            alert("Thankyou, your message has been sent!");
+                          }
+                        </script>
                     </div>
                     <div class="right-side">
                         <div class="cloud"></div>
