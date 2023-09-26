@@ -356,22 +356,19 @@ button.inactive:hover{
 .overlay {
     position: absolute;
     bottom: 0;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 0px;
     right: 0;
-    height: 93.8%;
-    width: 93.8%;
-    /* top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%; */
+    /* height: 93.8%;
+    width: 93.8%; */
     opacity: 0;
     transition: .5s ease;
     background: linear-gradient(to bottom right, rgba(227, 13, 13, 1), lightsalmon);
     justify-content: center;
     align-items: flex-end;
     border-radius: 25px;
-    /* margin: auto 0; */
+    margin: 10px;
+    padding: 0px;
 }
 
 .images:hover .overlay {
@@ -381,22 +378,19 @@ button.inactive:hover{
 .overlay2 {
     position: absolute;
     bottom: 0;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 0px;
     right: 0;
-    height: 93.8%;
-    width: 93.8%;
-    /* top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%; */
+    /* height: 93.8%;
+    width: 93.8%; */
     opacity: 0;
     transition: .5s ease;
     background: linear-gradient(to bottom right, rgba(56, 189, 248, 1), lightblue);
     justify-content: center;
     align-items: flex-end;
     border-radius: 25px;
-    /* margin: auto 0; */
+    margin: 10px;
+    padding: 0px;
 }
 
 .images:hover .overlay2 {
@@ -406,22 +400,19 @@ button.inactive:hover{
 .overlay3 {
     position: absolute;
     bottom: 0;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 0px;
     right: 0;
-    height: 93.8%;
-    width: 93.8%;
-    /* top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%; */
+    /* height: 93.8%;
+    width: 93.8%; */
     opacity: 0;
     transition: .5s ease;
     background: linear-gradient(to bottom right, plum, rgba(97, 218, 251, 1));
     justify-content: center;
     align-items: flex-end;
     border-radius: 25px;
-    /* margin: auto 0; */
+    margin: 10px;
+    padding: 0px;
 }
 
 .images:hover .overlay3 {
@@ -782,7 +773,7 @@ footer {
     .button-filters{
         margin-bottom: 50px;
     }
-    .overlay{
+    /* .overlay{
         height: 91%;
         width: 91%;
     }
@@ -793,7 +784,7 @@ footer {
     .overlay3{
         height: 91%;
         width: 91%;
-    }
+    } */
     .category{
         transform: translateY(6.5rem);
         font-size: 1.2rem;
@@ -1001,7 +992,7 @@ footer {
     .button-filters{
         margin-bottom: 50px;
     }
-    .overlay{
+    /* .overlay{
         height: 94%;
         width: 94%;
     }
@@ -1012,7 +1003,7 @@ footer {
     .overlay3{
         height: 94%;
         width: 94%;
-    }
+    } */
     .category{
         transform: translateY(7.5rem);
         font-size: 1.2rem;
@@ -1222,7 +1213,7 @@ footer {
         margin-bottom: 50px;
         padding: 0 2rem;
     }
-    .overlay{
+    /* .overlay{
         height: 95%;
         width: 95%;
     }
@@ -1233,7 +1224,7 @@ footer {
     .overlay3{
         height: 95%;
         width: 95%;
-    }
+    } */
     .category{
         transform: translateY(10.5rem);
     }
@@ -1443,7 +1434,7 @@ footer {
         margin-bottom: 50px;
         padding: 0 2rem;
     }
-    .overlay{
+    /* .overlay{
         height: 96%;
         width: 96%;
     }
@@ -1454,7 +1445,7 @@ footer {
     .overlay3{
         height: 94%;
         width: 93.5%;
-    }
+    } */
     .category{
         transform: translateY(12.5rem);
     }
@@ -1610,7 +1601,7 @@ footer {
     .right-side{
         display: none;
     }
-    .overlay{
+    /* .overlay{
         height: 92.8%;
         width: 93%;
     }
@@ -1621,7 +1612,7 @@ footer {
     .overlay3{
         height: 92.8%;
         width: 93%;
-    }
+    } */
     .category{
         transform: translateY(8.5rem);
     }
@@ -1633,7 +1624,7 @@ footer {
     .circle-container{
         margin: auto 20%;
     }
-    .overlay{
+    /* .overlay{
         height: 94.5%;
         width: 94.5%;
     }
@@ -1644,25 +1635,11 @@ footer {
     .overlay3{
         height: 94.5%;
         width: 94.5%;
-    }
+    } */
 }
 @media(min-width: 550px) and (max-width: 600px){
     .circle-container{
         margin: auto 26%;
-    }
-}
-@media(min-width: 700px) and (max-width: 768px){
-    .overlay{
-        height: 93.8%;
-        width: 93.8%;
-    }
-    .overlay2{
-        height: 93.8%;
-        width: 93.8%;
-    }
-    .overlay3{
-        height: 93.8%;
-        width: 93.8%;
     }
 }
 @media (min-width: 769px) and (max-width: 950px){
@@ -1691,7 +1668,7 @@ footer {
         gap: 4rem;
         align-items: center;
     }
-    .overlay{
+    /* .overlay{
         height: 94.5%;
         width: 94.5%;    
     }
@@ -1702,7 +1679,7 @@ footer {
     .overlay3{
         height: 94.5%;
         width: 94.5%;    
-    }
+    } */
 }
 @media(min-width: 950px) and (max-width: 1150px){
     .about-content{
@@ -1717,22 +1694,9 @@ footer {
         height: 250px;
     }
 }
-@media(min-width: 900px) and (max-width: 1000px){
-    .overlay{
-        height: 95%;
-        width: 95%;
-    }
-    .overlay2{
-        height: 95%;
-        width: 95%;
-    }
-    .overlay3{
-        height: 95%;
-        width: 95%;
-    }
-}
+
 @media(min-width: 1000px) and (max-width: 1100px){
-    .overlay{
+    /* .overlay{
         height: 92.5%;
         width: 92.5%;
     }
@@ -1743,7 +1707,7 @@ footer {
     .overlay3{
         height: 92.5%;
         width: 92.5%;
-    }
+    } */
     .category{
         transform: translateY(8rem);
     }
