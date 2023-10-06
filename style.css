@@ -139,7 +139,7 @@ p{
     color: black;
 }
 .resume:active{
-    transform: translateY(3px);
+    /* transform: translateY(3px); */
     box-shadow: none;
 }
 .resume:hover{
