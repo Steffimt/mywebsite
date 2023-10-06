@@ -135,14 +135,29 @@ p{
     font-weight: 600;
     border: none;
     cursor: pointer;
-}
-.resume a{
     text-decoration: none;
     color: black;
+}
+.resume:active{
+    transform: translateY(3px);
+    box-shadow: none;
 }
 .resume:hover{
     background-color: #6F91D1;
 }
+.resume2{
+    background: none;
+    border-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 1.5rem 0;
+    cursor: pointer;
+}
+/* .resume2:active{
+    transform: translateY(3px);
+    box-shadow: none;
+} */
 .circle-container {
     position: relative;
     top: -7px; 
@@ -676,7 +691,7 @@ footer {
     }
     .hero{
         flex-direction: inherit;
-        height: 195vh
+        height: 145vh
     }
     .hero-img{
         height: 200px;
