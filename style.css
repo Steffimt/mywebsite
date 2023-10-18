@@ -87,7 +87,7 @@ i.mobile-menu{
 .hero{
     display: flex;
     flex-direction: column;
-    height: 125vh;
+    height: 140vh;
     position: relative;
     width: 100%;
 }
@@ -151,7 +151,7 @@ p{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 18px;
-    margin: 1.5rem 0;
+    margin: 2.5rem 0;
     cursor: pointer;
 }
 /* .resume2:active{
@@ -1665,7 +1665,7 @@ footer {
         height: 135vh;
     }
     .skills{
-        transform: translateY(5rem);
+        transform: translateY(6rem);
     }
     .skills img{
         height: 25px;
